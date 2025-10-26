@@ -1,0 +1,23 @@
+I need your help writing a software specification.
+
+I want to build a flashcards web app to help Russian speakers learn English, using TypeScript and Vite/React.
+
+Here are the main features I want:
+
+Each card should show an English word/phrase on one side and the Russian translation on the other.
+
+Users should be able to flip the card to see the Russian translation.
+
+After flipping, there should be two buttons under each card: “Got it right” and “Got it wrong.”
+
+The app should remember which cards I got wrong.
+
+A review mode to practice only the cards I don’t know.
+
+A quiz/test mode with multiple-choice and fill-in-the-blank options.
+
+A statistics page to track how many cards I’ve studied and my correct vs. incorrect answers.
+
+The output should be written and formatted in Markdown.
+
+If anything is unclear, please ask follow-up questions before you start writing.

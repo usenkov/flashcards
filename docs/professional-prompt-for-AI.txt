@@ -1,0 +1,76 @@
+
+---
+
+## 💻 Professional Prompt for AI Code Editors
+
+**Task:** I need your help writing a **software specification** for a web-based **flashcards application**.
+
+**Goal:** The app should help **Russian speakers learn English vocabulary** through interactive flashcards.
+The project will be built using **TypeScript** and **Vite/React**.
+
+---
+
+### 🧩 Core Features
+
+1. **Flashcards System**
+
+   * Each flashcard displays an **English word or phrase** on the front side.
+   * The **back side** reveals the **Russian translation**.
+   * Users can **flip** cards to view translations interactively.
+
+2. **Answer Feedback**
+
+   * After flipping, display two buttons below each card:
+
+     * ✅ **Got it right**
+     * ❌ **Got it wrong**
+   * The app should **track incorrect answers** for targeted review sessions.
+
+3. **Review Mode**
+
+   * Allow users to **redo only the cards they answered incorrectly**.
+   * Include a **shuffle** option or repeated practice mode until mastery is achieved.
+
+4. **Quiz / Test Mode**
+
+   * Provide **multiple-choice** and **fill-in-the-blank** question formats.
+   * Allow customizable question sets (e.g., by topic, word group, or difficulty level).
+
+5. **Progress & Statistics**
+
+   * A **dashboard** that shows:
+
+     * Total cards studied
+     * Correct vs. incorrect answers
+     * Progress over time and accuracy trends
+
+---
+
+### ⚙️ Technical Requirements
+
+* **Frontend Framework:** React (with Vite)
+* **Programming Language:** TypeScript
+* **State Management:** React Context API or local state
+* **Data Storage:** LocalStorage for persistence (potential to expand to a backend later)
+* **UI Design:** Clean, responsive, and accessible layout (desktop and mobile)
+* **Output Format:** Markdown-formatted software specification
+
+---
+
+### 🧭 Instructions
+
+Before generating the specification:
+
+* Ask **clarifying questions** if any details about features, UI, or functionality are unclear.
+* Produce the final specification using **clear Markdown headings and sections**, including:
+
+  * Overview
+  * Functional Requirements
+  * Non-Functional Requirements
+  * User Flow
+  * Technical Stack
+  * Future Enhancements
+
+---
+
+Would you like me to extend this prompt with a **recommended file structure** (e.g., `/src/components/Card.tsx`, `/pages/Quiz.tsx`, `/hooks/useStats.ts`) and **data model examples** for direct generation in Cursor or Claude Code?
