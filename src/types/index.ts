@@ -14,7 +14,7 @@
  * @property category - The thematic category this card belongs to (e.g., "animals", "food")
  * @property russian - The Russian word or phrase
  * @property english - The English translation
- * @property quiz - Quiz configuration for this card
+ * @propclearerty quiz - Quiz configuration for this card
  * @property quiz.type - Currently only "multiple-choice" is supported
  * @property quiz.options - Array of Russian words shown as answer choices (one correct, others incorrect)
  */
