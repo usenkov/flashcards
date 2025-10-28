@@ -1,14 +1,30 @@
+/**
+ * Flashcards Data
+ * 
+ * This file contains all the flashcard data for the application.
+ * Each flashcard has:
+ * - category: Thematic grouping of the word
+ * - russian: The Russian word to learn
+ * - english: The English translation shown first
+ * - quiz.options: Multiple choice options for quiz mode (future Phase 3)
+ * 
+ * The flashcards are organized by category for easy maintenance.
+ * To add new words: Copy an existing flashcard object and modify the values.
+ */
+
 import { Flashcard } from '../types';
 
+// Main flashcards array - exported for use throughout the app
 export const flashcards: Flashcard[] = [
-  // Animals
+  // ===== ANIMALS CATEGORY =====
+  // Common pets and animals
   {
     category: "animals",
     russian: "кошка",
     english: "cat",
     quiz: {
       type: "multiple-choice",
-      options: ["собака", "кошка", "птица", "рыба"]
+      options: ["собака", "кошка", "птица", "рыба"] // Options: dog, cat, bird, fish
     }
   },
   {
@@ -17,7 +33,7 @@ export const flashcards: Flashcard[] = [
     english: "dog",
     quiz: {
       type: "multiple-choice",
-      options: ["кошка", "собака", "лошадь", "корова"]
+      options: ["кошка", "собака", "лошадь", "корова"] // Options: cat, dog, horse, cow
     }
   },
   {
@@ -26,18 +42,19 @@ export const flashcards: Flashcard[] = [
     english: "bird",
     quiz: {
       type: "multiple-choice",
-      options: ["птица", "рыба", "кошка", "собака"]
+      options: ["птица", "рыба", "кошка", "собака"] // Options: bird, fish, cat, dog
     }
   },
 
-  // Food
+  // ===== FOOD CATEGORY =====
+  // Common food items and ingredients
   {
     category: "food",
     russian: "хлеб",
     english: "bread",
     quiz: {
       type: "multiple-choice",
-      options: ["мясо", "хлеб", "молоко", "яйцо"]
+      options: ["мясо", "хлеб", "молоко", "яйцо"] // Options: meat, bread, milk, egg
     }
   },
   {
@@ -46,7 +63,7 @@ export const flashcards: Flashcard[] = [
     english: "meat",
     quiz: {
       type: "multiple-choice",
-      options: ["хлеб", "мясо", "рыба", "сыр"]
+      options: ["хлеб", "мясо", "рыба", "сыр"] // Options: bread, meat, fish, cheese
     }
   },
   {
@@ -55,18 +72,19 @@ export const flashcards: Flashcard[] = [
     english: "milk",
     quiz: {
       type: "multiple-choice",
-      options: ["молоко", "вода", "сок", "чай"]
+      options: ["молоко", "вода", "сок", "чай"] // Options: milk, water, juice, tea
     }
   },
 
-  // Furniture
+  // ===== FURNITURE CATEGORY =====
+  // Household furniture items
   {
     category: "furniture",
     russian: "стол",
     english: "table",
     quiz: {
       type: "multiple-choice",
-      options: ["стул", "стол", "кровать", "шкаф"]
+      options: ["стул", "стол", "кровать", "шкаф"] // Options: chair, table, bed, wardrobe
     }
   },
   {
@@ -75,7 +93,7 @@ export const flashcards: Flashcard[] = [
     english: "chair",
     quiz: {
       type: "multiple-choice",
-      options: ["стол", "стул", "диван", "кресло"]
+      options: ["стол", "стул", "диван", "кресло"] // Options: table, chair, sofa, armchair
     }
   },
   {
@@ -84,18 +102,19 @@ export const flashcards: Flashcard[] = [
     english: "bed",
     quiz: {
       type: "multiple-choice",
-      options: ["кровать", "диван", "стул", "стол"]
+      options: ["кровать", "диван", "стул", "стол"] // Options: bed, sofa, chair, table
     }
   },
 
-  // Clothes
+  // ===== CLOTHES CATEGORY =====
+  // Clothing and garments
   {
     category: "clothes",
     russian: "рубашка",
     english: "shirt",
     quiz: {
       type: "multiple-choice",
-      options: ["брюки", "рубашка", "платье", "куртка"]
+      options: ["брюки", "рубашка", "платье", "куртка"] // Options: pants, shirt, dress, jacket
     }
   },
   {
@@ -104,7 +123,7 @@ export const flashcards: Flashcard[] = [
     english: "pants",
     quiz: {
       type: "multiple-choice",
-      options: ["рубашка", "брюки", "юбка", "шорты"]
+      options: ["рубашка", "брюки", "юбка", "шорты"] // Options: shirt, pants, skirt, shorts
     }
   },
   {
@@ -113,18 +132,19 @@ export const flashcards: Flashcard[] = [
     english: "dress",
     quiz: {
       type: "multiple-choice",
-      options: ["платье", "рубашка", "брюки", "куртка"]
+      options: ["платье", "рубашка", "брюки", "куртка"] // Options: dress, shirt, pants, jacket
     }
   },
 
-  // Home
+  // ===== HOME CATEGORY =====
+  // House and room-related vocabulary
   {
     category: "home",
     russian: "дом",
     english: "house",
     quiz: {
       type: "multiple-choice",
-      options: ["квартира", "дом", "офис", "магазин"]
+      options: ["квартира", "дом", "офис", "магазин"] // Options: apartment, house, office, shop
     }
   },
   {
@@ -133,7 +153,7 @@ export const flashcards: Flashcard[] = [
     english: "room",
     quiz: {
       type: "multiple-choice",
-      options: ["комната", "кухня", "ванная", "спальня"]
+      options: ["комната", "кухня", "ванная", "спальня"] // Options: room, kitchen, bathroom, bedroom
     }
   },
   {
@@ -142,18 +162,19 @@ export const flashcards: Flashcard[] = [
     english: "kitchen",
     quiz: {
       type: "multiple-choice",
-      options: ["кухня", "ванная", "спальня", "гостиная"]
+      options: ["кухня", "ванная", "спальня", "гостиная"] // Options: kitchen, bathroom, bedroom, living room
     }
   },
 
-  // City
+  // ===== CITY CATEGORY =====
+  // Urban locations and places
   {
     category: "city",
     russian: "улица",
     english: "street",
     quiz: {
       type: "multiple-choice",
-      options: ["дорога", "улица", "площадь", "парк"]
+      options: ["дорога", "улица", "площадь", "парк"] // Options: road, street, square, park
     }
   },
   {
@@ -162,7 +183,7 @@ export const flashcards: Flashcard[] = [
     english: "park",
     quiz: {
       type: "multiple-choice",
-      options: ["парк", "сад", "лес", "пляж"]
+      options: ["парк", "сад", "лес", "пляж"] // Options: park, garden, forest, beach
     }
   },
   {
@@ -171,18 +192,19 @@ export const flashcards: Flashcard[] = [
     english: "shop",
     quiz: {
       type: "multiple-choice",
-      options: ["магазин", "рынок", "кафе", "банк"]
+      options: ["магазин", "рынок", "кафе", "банк"] // Options: shop, market, cafe, bank
     }
   },
 
-  // Shopping
+  // ===== SHOPPING CATEGORY =====
+  // Shopping and commerce vocabulary
   {
     category: "shopping",
     russian: "покупать",
     english: "buy",
     quiz: {
       type: "multiple-choice",
-      options: ["продавать", "покупать", "платить", "тратить"]
+      options: ["продавать", "покупать", "платить", "тратить"] // Options: sell, buy, pay, spend
     }
   },
   {
@@ -191,7 +213,7 @@ export const flashcards: Flashcard[] = [
     english: "money",
     quiz: {
       type: "multiple-choice",
-      options: ["деньги", "цена", "счет", "чек"]
+      options: ["деньги", "цена", "счет", "чек"] // Options: money, price, bill, receipt
     }
   },
   {
@@ -200,18 +222,19 @@ export const flashcards: Flashcard[] = [
     english: "price",
     quiz: {
       type: "multiple-choice",
-      options: ["цена", "стоимость", "деньги", "счет"]
+      options: ["цена", "стоимость", "деньги", "счет"] // Options: price, cost, money, bill
     }
   },
 
-  // Travel
+  // ===== TRAVEL CATEGORY =====
+  // Travel and transportation vocabulary
   {
     category: "travel",
     russian: "путешествие",
     english: "travel",
     quiz: {
       type: "multiple-choice",
-      options: ["путешествие", "поездка", "отпуск", "каникулы"]
+      options: ["путешествие", "поездка", "отпуск", "каникулы"] // Options: travel, trip, vacation, holidays
     }
   },
   {
@@ -220,7 +243,7 @@ export const flashcards: Flashcard[] = [
     english: "airplane",
     quiz: {
       type: "multiple-choice",
-      options: ["поезд", "самолет", "автобус", "машина"]
+      options: ["поезд", "самолет", "автобус", "машина"] // Options: train, airplane, bus, car
     }
   },
   {
@@ -229,18 +252,19 @@ export const flashcards: Flashcard[] = [
     english: "hotel",
     quiz: {
       type: "multiple-choice",
-      options: ["отель", "гостиница", "хостел", "кемпинг"]
+      options: ["отель", "гостиница", "хостел", "кемпинг"] // Options: hotel, hotel, hostel, camping
     }
   },
 
-  // Verbs
+  // ===== VERBS CATEGORY =====
+  // Common action verbs
   {
     category: "verbs",
     russian: "идти",
     english: "go",
     quiz: {
       type: "multiple-choice",
-      options: ["приходить", "идти", "бежать", "ехать"]
+      options: ["приходить", "идти", "бежать", "ехать"] // Options: come, go, run, ride
     }
   },
   {
@@ -249,7 +273,7 @@ export const flashcards: Flashcard[] = [
     english: "speak",
     quiz: {
       type: "multiple-choice",
-      options: ["говорить", "слушать", "читать", "писать"]
+      options: ["говорить", "слушать", "читать", "писать"] // Options: speak, listen, read, write
     }
   },
   {
@@ -258,7 +282,7 @@ export const flashcards: Flashcard[] = [
     english: "read",
     quiz: {
       type: "multiple-choice",
-      options: ["читать", "писать", "говорить", "слушать"]
+      options: ["читать", "писать", "говорить", "слушать"] // Options: read, write, speak, listen
     }
   }
 ];
