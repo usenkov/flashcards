@@ -20,9 +20,8 @@
  * - sessionComplete: Boolean flag when all cards have been reviewed
  */
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import { Category } from '../types';
 import { flashcards } from '../data/flashcards';
 import Flashcard from '../components/Flashcard';
 

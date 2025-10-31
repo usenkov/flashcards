@@ -12,7 +12,6 @@
  * - "/stats" - Statistics and progress tracking (Phase 3)
  */
 
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import CategorySelectionPage from './pages/CategorySelectionPage';
